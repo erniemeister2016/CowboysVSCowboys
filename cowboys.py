@@ -19,10 +19,6 @@ pygame.display.set_caption('Cowboys VS Cowboys')
 
 WHITE = (255, 255, 255)
 
-#Game Music
-pygame.mixer.music.load('Showdown.mp3')
-pygame.mixer.music.set_volume(0.4)
-pygame.mixer.music.play(loops = -1)
 
 #Player class
 class Cowboy(pygame.sprite.Sprite):
@@ -128,6 +124,11 @@ class projectileEnemy(pygame.sprite.Sprite):
 
 
 pygame.init()
+
+#Game Music
+pygame.mixer.music.load('Showdown.mp3')
+pygame.mixer.music.set_volume(0.4)
+pygame.mixer.music.play(loops = -1)
 
 #Function to display text
 font_name = pygame.font.match_font('arial')
